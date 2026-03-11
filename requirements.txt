@@ -1,3 +1,5 @@
+#Install: pip install -r requirements.txt
+
 numpy==1.26.4
 opencv-python==4.8.1.78
 tensorflow==2.15.0
