@@ -1,5 +1,5 @@
 # tracking-face-using-OPENCV - python 3.11
-# 🧠 Enhanced Human Detector V2.0
+#  Enhanced Human Detector
 
 Real-time human analysis from a laptop camera using **OpenCV** and **dlib**.  
 Detects and displays **Gender · Age · Emotion · Ethnicity** for every face in frame,  
@@ -84,7 +84,7 @@ dlib requires **CMake** and a **C++ compiler**:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 human-detector/
@@ -108,13 +108,13 @@ human-detector/
 
 ---
 
-## 🚀 Running the Detector
+##  Running the Detector
 
 ```bash
 python code_source.py
 ```
 
-### ⌨️ Keyboard Controls
+###  Keyboard Controls
 
 | Key | Action |
 |---|---|
@@ -140,9 +140,9 @@ Extract and place `shape_predictor_68_face_landmarks.dat` in the **project root 
 
 ---
 
-## 💡 Suggestions & Upgrade Roadmap
+##  Suggestions & Upgrade Roadmap
 
-### 🔧 Short-term improvements
+###  Short-term improvements
 
 - **Replace heuristic gender/age with a dedicated deep learning model**  
   e.g. [InsightFace](https://github.com/deepinsight/insightface) or [DeepFace](https://github.com/serengil/deepface) — significant accuracy boost.
@@ -156,7 +156,7 @@ Extract and place `shape_predictor_68_face_landmarks.dat` in the **project root 
 - **Add face recognition (re-ID)**  
   Use face embeddings (dlib `face_recognition` or ArcFace) so returning persons get the same ID across sessions.
 
-### 🚀 Mid-term upgrades
+###  Mid-term upgrades
 
 - **Switch to a YOLO-based face detector** (e.g. YOLOv8-face) for faster, more robust multi-face detection including side profiles and occluded faces.
 
@@ -166,7 +166,7 @@ Extract and place `shape_predictor_68_face_landmarks.dat` in the **project root 
 
 - **Multi-camera support** — extend `run()` to accept a camera index argument and support multiple simultaneous streams.
 
-### 🏗️ Long-term / production
+###  Long-term / production
 
 - **Edge deployment** — convert models to ONNX or TensorRT for Jetson Nano / Raspberry Pi.
 
@@ -178,7 +178,7 @@ Extract and place `shape_predictor_68_face_landmarks.dat` in the **project root 
 
 ---
 
-## 🐞 Troubleshooting
+##  Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -190,7 +190,7 @@ Extract and place `shape_predictor_68_face_landmarks.dat` in the **project root 
 
 ---
 
-## 📄 License
+##  License
 
 This project is released for educational and research purposes.  
 Pre-trained model weights retain their original licences.
