@@ -1,0 +1,67 @@
+# ============================================================
+#  Enhanced Human Detector V2.0 — .gitignore
+# ============================================================
+
+# ── Python Version Notice ───────────────────────────────────
+#  • Python > 3.11  → Virtual environment folder is /venv
+#                     → The /venv entry below IS required ✅
+#  • Python ≤ 3.11  → You likely run pip/python from the
+#                     system terminal directly (no venv needed)
+#                     → You may comment out the /venv line below
+# ────────────────────────────────────────────────────────────
+
+# Virtual environment (Python > 3.11 users keep this uncommented)
+venv/
+.venv/
+env/
+ENV/
+
+# ── Pre-trained model weights (large binary files) ──────────
+*.caffemodel
+*.prototxt
+*.dat
+shape_predictor_68_face_landmarks.dat
+age_net.caffemodel
+gender_net.caffemodel
+age_deploy.prototxt
+gender_deploy.prototxt
+
+# ── Screenshots & saved frames ──────────────────────────────
+detection_*.jpg
+detection_*.png
+screenshots/
+
+# ── Python cache ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── Distribution / packaging ────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── IDE / editor ────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Jupyter Notebooks checkpoints ───────────────────────────
+.ipynb_checkpoints/
+
+# ── Environment variables ────────────────────────────────────
+.env
+.env.*
